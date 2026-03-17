@@ -53,12 +53,16 @@ const App = () => {
           )}
         </div>
 
-        <div>
-          <Link to="/login">Login</Link>
+        <ul>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
           {isAuthenticated && (
-            <Link to="/playground">Playground</Link>
+            <li>
+              <Link to="/playground">Playground</Link>
+            </li>
           )}
-        </div>
+        </ul>
 
         <Routes>
           <Route
