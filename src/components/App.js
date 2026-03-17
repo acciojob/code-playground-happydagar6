@@ -53,15 +53,14 @@ const App = () => {
           )}
         </div>
 
+        {/* ✅ THE FIX: Links ko bina condition ke hamesha show karna hai aur order sahi karna hai */}
         <ul>
+          <li>
+            <Link to="/playground">PlayGround</Link>
+          </li>
           <li>
             <Link to="/login">Login</Link>
           </li>
-          {isAuthenticated && (
-            <li>
-              <Link to="/playground">Playground</Link>
-            </li>
-          )}
         </ul>
 
         <Routes>
